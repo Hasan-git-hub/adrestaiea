@@ -1,0 +1,82 @@
+@keyframes animation {
+    0% {
+        transition: all 0.5s ease-in;
+        transform: scale(0.9);
+    } 50% {
+        transition: all 0.5s ease-in-out;
+        transform: scale(1.1);
+    } 100% {
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+}
+.header {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    &-cont {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-list {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+        &-items {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 15px;
+            line-height: 100%;
+            color: #142251;
+
+            &:hover {
+                animation: animation 1.5s forwards;
+                background-color: white;
+                color: #213887;
+            }
+        }
+        &-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;  
+
+            &-text {
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                color: #213887;
+            }
+            &-plus-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 50%;
+                background-color: #213887;
+                color: white;
+                font-size: 30px;
+                width: 36px;
+                height: 36px;
+                transition: all 0.8s;
+
+                &:hover {
+                    animation: animation 1.5s forwards;
+                    border: 1px solid #213887;
+                    background-color: white;
+                    color: #213887;
+                }
+            }
+        }
+    }
+    
+}

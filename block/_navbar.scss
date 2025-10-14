@@ -1,0 +1,142 @@
+.email-btn {
+    border: none;
+    border-radius: 16px;
+    background-color: transparent;
+
+    &-text {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 100%;
+        letter-spacing: -0.03em;
+        text-decoration-line: underline;
+        text-transform: lowercase;
+        color: #213887;
+    }
+}
+.whatsap-icon {
+    width: 25px;
+    height: 25px;
+    color: #213887;
+}
+.navbar {
+    width: 1oop;
+
+    &-cont {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;  
+            width: 361px;
+            height: 89px;
+            background: rgba(33, 56, 135, 0.06);
+            border-radius: 16px;
+
+            &-text {
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                color: #213887;
+            }
+            &-plus-btn {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: none;
+                border-radius: 50%;
+                background-color: #213887;
+                color: white;
+                font-size: 30px;
+                width: 36px;
+                height: 36px;
+                transition: all 0.8s;
+
+                &:hover {
+                    animation: animation 1.5s forwards;
+                    border: 1px solid #213887;
+                    background-color: transparent;
+                    color: #213887;
+                }
+            }
+        }
+        &-title {
+            width: 787px;
+            height: 255px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 100px;
+            line-height: 85%;
+            letter-spacing: -0.04em;
+            color: #142251;
+
+            &-span {
+                color: #989EB1;
+            }
+        }
+        &-info {
+            width: 488px;
+            height: 24px;
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 100%;
+            letter-spacing: -0.03em;
+            color: #989EB1;
+        }
+        &-left {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        } 
+        &-right {
+            position: relative;
+            width: 810px;
+            height: 650px;
+
+            &-text {
+                width: 109px;
+                height: 20px;
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 100%;
+                letter-spacing: -0.03em;
+                text-transform: lowercase;
+                color: #142251;
+            }
+            &-box {
+                position: absolute;
+                top: 570px;
+                right: -200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                border: none;
+                border-radius: 16px;
+                background-color: #F2F3F8;
+                width: 400px;
+                height: 54px;
+            }
+        }
+        &-img {
+            position: absolute;
+            top: 90px;
+            right: -230px;
+            width: 610px;
+            height: 450px;
+        }
+    }
+}
