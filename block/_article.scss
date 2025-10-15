@@ -80,11 +80,11 @@
         &-hover-box {
             margin: auto;
             width: 160px;
-            height: 80px;
+            height: auto;
             background-color: #142251;
             border: none;
             border-radius: 16px;
-            display: none;
+            display: flex;
             align-items: center;
             justify-content: center;
             justify-content: space-between;
@@ -129,21 +129,11 @@
                 flex-direction: column;
                 gap: 30px;
                 width: 280px;
-                height: 401px;
+                height: auto;
                 border-radius: 16px;
                 padding: 10px;
                 background-color: white;
                 transition: all 2s ease-in-out;
-
-                &:hover &-img {
-                    width: 104px;
-                } &:hover .article-cont-hover-box {
-                    transition: all 2s ease-in-out;
-                    display: flex;
-                } &:hover {
-                    height: 401px;
-                    margin-top: 10px;
-                }
             }
             &-title {
                 width: 253px;
